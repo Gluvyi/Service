@@ -50,3 +50,24 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
      #在浏览器地址栏输入地址
      http://服务器ip:8888
      ```
+ ## Telegram每天定时发送消息、签到方法
+  - 安装telegram-cli(方法一)
+    ```
+    git clone https://gitee.com/Jie-Qiao/tg
+    sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson-dev libpython-dev lua-lgi libssl1.0-dev make
+    cd tg
+    ./configure
+    make
+    ```
+  - 安装telegram-cli(方法二)
+    ```
+     cd /root/work/telegram  ### 或者你自己想要存放的目录
+     git clone --recursive https://github.com/vysheng/tg.git && cd tg
+     ### ubuntu
+     sudo apt-get update
+     sudo apt-get -y install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson-dev libpython-dev make
+     ./configure
+     make
+    ```
+   - 如出现错误
+     - ![1639632704](https://user-images.githubusercontent.com/60965636/128515507-e19a79bf-7aa4-4841-a366-36df6e56ef74.png)
