@@ -1,0 +1,6 @@
+####以下为示例sh脚本
+pkill telegram-cli
+(echo "contact_list";sleep 5;echo "msg XXXXXX /checkin"; echo "safe_quit") | proxychains4  /path/to/tg/bin/telegram-cli -k tg-server.pub -W &
+sleep 100s
+pkill telegram-cli
+###里面的XXXXXX就是你要签到的bot的，还有/path/to/tg/就是你的路径，/checkin就是要发送的消息
