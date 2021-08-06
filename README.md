@@ -72,17 +72,17 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
    - 如出现图中错误可尝试以下代码解决
       ![1639632704](https://user-images.githubusercontent.com/60965636/128515507-e19a79bf-7aa4-4841-a366-36df6e56ef74.png)
      ```
-        apt-get install -y libgcrypt20-dev libssl-dev
-        ./configure --disable-openssl --prefix=/usr CFLAGS="$CFLAGS -w"
-        make
+      apt-get install -y libgcrypt20-dev libssl-dev
+      ./configure --disable-openssl --prefix=/usr CFLAGS="$CFLAGS -w"
+      make
      ```
    - 安装代理软件（穿透）
-       ```
-        # wget https://github.com/rofl0r/proxychains-ng/releases/download/v4.12/proxychains-ng-4.12.tar.xz
-        tar xf  proxychains-ng-4.12.tar.xz
-        cd proxychains-ng-4.12
-        ./configure --prefix=/usr --sysconfdir=/etc
-        make
-        sudo make install
-        sudo make install-config
-        ```
+     ```
+      # wget https://github.com/rofl0r/proxychains-ng/releases/download/v4.12/proxychains-ng-4.12.tar.xz
+      tar xf  proxychains-ng-4.12.tar.xz
+      cd proxychains-ng-4.12
+      ./configure --prefix=/usr --sysconfdir=/etc
+      make
+      sudo make install
+      sudo make install-config
+      ```
