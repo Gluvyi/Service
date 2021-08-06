@@ -22,3 +22,10 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
     -  将config.yaml文件拖入config.yaml文件夹
     -  注意将ex改为0.0.0.0:9090，否则可能无法进入面板
   - 拉取clash镜像
+   ```
+   docker pull dreamacro/clash
+   ```
+  - 拉取网页版clash面板（WebUI）
+   ```
+   docker pull haishanh/yacd
+   ```
