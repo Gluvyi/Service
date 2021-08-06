@@ -30,4 +30,4 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
    docker pull haishanh/yacd
    ```
   - 配置docker-compose.yaml文件
-    - 将文件放入任意文件夹，注意运行容器时必须进入放入docker-compose.yaml的文件目录下，再运行容器。以下为[clash Yaml文件](https://raw.githubusercontent.com/Yu1zzZ/Service/main/docker-compose.yaml)。
+    - 将文件放入任意文件夹，注意运行容器时必须进入放入docker-compose.yaml的文件目录下，再运行容器。[clash Yaml文件](https://raw.githubusercontent.com/Yu1zzZ/Service/main/docker-compose.yaml)示例。
