@@ -59,7 +59,7 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
     ./configure
     make
     ```
-  - 安装telegram-cli(方法二)
+  - 安装telegram-cli(推荐方法二)
     ```
      cd /root/work/telegram  ### 或者你自己想要存放的目录
      git clone --recursive https://github.com/vysheng/tg.git && cd tg
@@ -98,3 +98,15 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
        ```
        proxychains4 curl https://www.google.com
        ```
+   - 运行tele-cli内核
+     - 初始化登录
+       ```
+       proxychains4 bin/telegram-cli -k tg-server.pub
+       ```
+       _如果没有意外，是会看到输入登陆的手机号和验证码，手机号记得把+86也加上去。<br>_\
+       _最后登陆完后就可以退出。<br>_
+       _然后可以直接使用命令进行签到：<br>_
+       ```
+       (echo "contact_list";sleep 5;echo "msg XXXXXX /checkin"; echo "safe_quit") | proxychains4 /path/to/tg/bin/telegram-cli -k tg-server.pub -W
+       ```
+       _里面的XXXXXX就是你要签到的bot的，还有/path/to/tg/就是你tele-cli的路径，/checkin就是要发送的消息_
