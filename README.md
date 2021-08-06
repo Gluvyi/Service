@@ -39,9 +39,9 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
      ```
      docker logs clash -f
      ```
-     - 如果日志显示出策略组和listen，即代表配置成功
+     _如果日志显示出策略组和listen，即代表配置成功_
    - 获取容器ip
      ```
      docker inspect --format='{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
      ```
-     __容器ip用于填写bot.json，如果填入ip后无法ping通机器人，可以尝试用服务器ip__
+     _容器ip用于填写bot.json，如果填入ip后无法ping通机器人，可以尝试用服务器ip_
