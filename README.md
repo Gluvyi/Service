@@ -90,6 +90,6 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
        ```
        sudo vim /etc/proxychains.conf
        ```
-       _在最下方[ProxyList]处添加对应代理服务器，格式按照下方填写即可_
+       _在最下方[ProxyList]处添加对应代理服务器，格式按照下方填写即可<br>_
        _#协议 地址 端口 用户 密码
           sock5 127.0.0.1 1080_
