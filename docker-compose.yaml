@@ -1,4 +1,4 @@
-# docker-compose版本
+# docker-compose版本（clash yaml文件）
 version: '3.7'
 # 服务列表
 services:
