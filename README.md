@@ -19,7 +19,7 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
  ## 二、部署clash容器
   - 部署clash配置文件
     -  在root文件夹下新建config.yaml文件夹
-    -  将config.yaml文件拖入config.yaml文件夹
+    -  将config.yaml文件拖入config.yaml文件夹（clash中机场文件）
     -  注意将ex改为0.0.0.0:9090，否则可能无法进入面板
   - 拉取clash镜像
     ```
@@ -112,5 +112,6 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
        _里面的XXXXXX就是你要签到的bot的，还有/path/to/tg/就是你tele-cli的路径，/checkin就是要发送的消息_
    - crontab定时任务
      - 编写[sh脚本](https://raw.githubusercontent.com/Yu1zzZ/Service/main/%E7%A4%BA%E4%BE%8Bsh%E8%84%9A%E6%9C%AC)设置定时任务
- ## 部署青龙
-   - 
+ ## 四、部署青龙
+   - 在想要得到路径下新建文件夹qinglong
+   - 新建[docker-compose.yaml]()文件
