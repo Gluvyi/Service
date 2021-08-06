@@ -76,3 +76,14 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
         ./configure --disable-openssl --prefix=/usr CFLAGS="$CFLAGS -w"
         make
        ```  
+    - 安装代理软件（穿透）
+      - ```
+        # wget https://github.com/rofl0r/proxychains-ng/releases/download/v4.12/proxychains-ng-4.12.tar.xz
+        tar xf  proxychains-ng-4.12.tar.xz
+        cd proxychains-ng-4.12
+        ./configure --prefix=/usr --sysconfdir=/etc
+        make
+        sudo make install
+        sudo make install-config
+
+        ```
