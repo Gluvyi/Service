@@ -50,7 +50,7 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
      #在浏览器地址栏输入地址
      http://服务器ip:8888
      ```
- ## Telegram每天定时发送消息、签到方法
+ ## 三、Telegram每天定时发送消息、签到方法
   - 安装telegram-cli(方法一)
     ```
     git clone https://gitee.com/Jie-Qiao/tg
@@ -110,3 +110,5 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
        (echo "contact_list";sleep 5;echo "msg XXXXXX /checkin"; echo "safe_quit") | proxychains4 /path/to/tg/bin/telegram-cli -k tg-server.pub -W
        ```
        _里面的XXXXXX就是你要签到的bot的，还有/path/to/tg/就是你tele-cli的路径，/checkin就是要发送的消息_
+   - crontab定时任务
+     - 编写[sh脚本]()设置定时任务
