@@ -112,3 +112,5 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
        _里面的XXXXXX就是你要签到的bot的，还有/path/to/tg/就是你tele-cli的路径，/checkin就是要发送的消息_
    - crontab定时任务
      - 编写[sh脚本](https://raw.githubusercontent.com/Yu1zzZ/Service/main/%E7%A4%BA%E4%BE%8Bsh%E8%84%9A%E6%9C%AC)设置定时任务
+ ## 部署青龙
+   - 
