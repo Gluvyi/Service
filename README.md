@@ -18,7 +18,7 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
     ```
  ## 二、部署clash容器
   - 部署clash配置文件
-   -  在root文件夹下新建config.yaml文件夹
-   -  将config.yaml文件拖入config.yaml文件夹
-   -  注意将ex改为0.0.0.0:9090，否则可能无法进入面板
+    -  在root文件夹下新建config.yaml文件夹
+    -  将config.yaml文件拖入config.yaml文件夹
+    -  注意将ex改为0.0.0.0:9090，否则可能无法进入面板
   - 拉取clash镜像
