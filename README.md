@@ -45,3 +45,8 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
      docker inspect --format='{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
      ```
      _容器ip用于填写bot.json，如果填入ip后无法ping通机器人，可以尝试用服务器ip_
+   - 进入clash面板
+     ```
+     #在浏览器地址栏输入地址
+     http://服务器ip:8888
+     ```
