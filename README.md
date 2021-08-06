@@ -86,3 +86,10 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
       sudo make install
       sudo make install-config
       ```
+     - 在使用 Proxychains4 进行代理前，需要修改配置文件
+       ```
+       sudo vim /etc/proxychains.conf
+       ```
+       _在最下方[ProxyList]处添加对应代理服务器，格式按照下方填写即可_
+       _#协议 地址 端口 用户 密码
+          sock5 127.0.0.1 1080_
