@@ -69,5 +69,10 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
      ./configure
      make
     ```
-   - 如出现错误
+   - 如出现图中错误可尝试以下代码解决
      - ![1639632704](https://user-images.githubusercontent.com/60965636/128515507-e19a79bf-7aa4-4841-a366-36df6e56ef74.png)
+     - ```
+        apt-get install -y libgcrypt20-dev libssl-dev
+        ./configure --disable-openssl --prefix=/usr CFLAGS="$CFLAGS -w"
+        make
+       ```  
