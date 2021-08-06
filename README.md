@@ -113,5 +113,4 @@ sudo curl -sSL https://get.daocloud.io/docker | sh
    - crontab定时任务
      - 编写[sh脚本](https://raw.githubusercontent.com/Yu1zzZ/Service/main/%E7%A4%BA%E4%BE%8Bsh%E8%84%9A%E6%9C%AC)设置定时任务
  ## 四、部署青龙
-   - 在想要得到路径下新建文件夹qinglong
-   - 新建[docker-compose.yaml]()文件
+   - 直接输入[命令行](https://raw.githubusercontent.com/Yu1zzZ/Service/main/%E9%9D%92%E9%BE%99%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%A4%BA%E4%BE%8B)运行即可
