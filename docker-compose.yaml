@@ -9,7 +9,7 @@ services:
         # 停止了总是重启
         restart: always
         volumes:
-            # 将配置文件挂载到容器中
+            # 将配置文件挂载到容器中（修改左侧路径即可）
             - /root/config.yaml/config.yaml:/root/.config/clash/config.yaml
         container_name: clash
         ports:
