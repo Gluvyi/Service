@@ -1,0 +1,28 @@
+# docker-compose版本
+version: '3.7'
+# 服务列表
+services:
+    # clash后台服务
+    clash:
+        # 设置image
+        image: dreamacro/clash
+        # 停止了总是重启
+        restart: always
+        volumes:
+            # 将配置文件挂载到容器中
+            - /root/config.yaml/config.yaml:/root/.config/clash/config.yaml
+        container_name: clash
+        ports:
+            # 这些端口都在配置文件中配置过，容器外地址可随心情配置
+            - 7890:7890
+            - 7891:7891
+            - 9090:9090
+    clash_web:
+        image: haishanh/yacd
+        restart: always
+        depends_on:
+            # 依赖于上面的clash服务，在clash启动后，web才启动
+            - clash
+        ports:
+            - 8888:80
+        container_name: clash_web
