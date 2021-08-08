@@ -1,9 +1,9 @@
 # 此仓库为Vps部署一些自用命令行
 ## 一、VPS部署docker
  - docker 安装
-  ```
-  sudo curl -sSL https://get.daocloud.io/docker | sh
-  ```
+   ```
+   sudo curl -sSL https://get.daocloud.io/docker | sh
+   ```
  - 安装docker-compose
    - 普通系统
      ```
