@@ -16,6 +16,23 @@
      pip3 install --upgrade pip
      pip install docker-compose
      ```
+  - 删除所有镜像
+    - 列出所有容器ID
+      ```
+      docker ps -aq
+      ```
+    - 停止所有容器
+      ```
+      docker stop $(docker ps -aq)
+      ```
+    - 删除所有容器
+      ```
+      docker rm $(docker ps -aq)
+      ```  
+    - 删除所有镜像
+      ```
+      docker rmi $(docker images -q)
+      ```  
  ## 二、部署clash容器
   - 部署clash配置文件
     -  在root文件夹下新建config.yaml文件夹
